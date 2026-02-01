@@ -4,15 +4,15 @@ export function createForm(editId, itemToEdit) {
   const form = document.createElement("form");
 
   form.innerHTML = `
-    <h2>grocery bud</h2>
+    <h2>Grocery Bud</h2>
     <div class="form-control">
       <input
         type="text"
         class="form-input"
-        placeholder="e.g. eggs"
+        placeholder="e.g. oil"
         value="${itemToEdit ? itemToEdit.name : ""}" />
      <button type="submit" class="btn">
-        ${editId ? "edit item" : "add item"}
+        ${editId ? "edit item" : "Add Item"}
       </button>
     </div>
   `;
